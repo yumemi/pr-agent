@@ -58,7 +58,7 @@ require_security_review=true
 require_ticket_analysis_review=true
 # general options
 persistent_comment=true
-extra_instructions = ""
+extra_instructions = "Please use Japanese in descriptions."
 final_update_message = true
 # review labels
 enable_review_labels_security=true
@@ -78,7 +78,7 @@ publish_labels=false
 add_original_user_description=true
 generate_ai_title=false
 use_bullet_points=true
-extra_instructions = ""
+extra_instructions = "Please use Japanese in descriptions."
 enable_pr_type=true
 final_update_message = true
 enable_help_text=false
@@ -111,7 +111,7 @@ commitable_code_suggestions = false
 dual_publishing_score_threshold=-1 # -1 to disable, [0-10] to set the threshold (>=) for publishing a code suggestion both in a table and as commitable
 focus_only_on_problems=true
 #
-extra_instructions = ""
+extra_instructions = "Please use Japanese in descriptions."
 enable_help_text=false
 enable_chat_text=false
 enable_intro_text=true
@@ -155,21 +155,21 @@ enable_help_text=false
 
 
 [pr_add_docs] # /add_docs #
-extra_instructions = ""
+extra_instructions = "Please use Japanese in descriptions."
 docs_style = "Sphinx" # "Google Style with Args, Returns, Attributes...etc", "Numpy Style", "Sphinx Style", "PEP257", "reStructuredText"
 file = ""              # in case there are several components with the same name, you can specify the relevant file
 class_name = ""        # in case there are several methods with the same name in the same file, you can specify the relevant class name
 
 [pr_update_changelog] # /update_changelog #
 push_changelog_changes=false
-extra_instructions = ""
+extra_instructions = "Please use Japanese in descriptions."
 add_pr_link=true
 
 [pr_analyze] # /analyze #
 enable_help_text=true
 
 [pr_test] # /test #
-extra_instructions = ""
+extra_instructions = "Please use Japanese in descriptions."
 testing_framework = "" # specify the testing framework you want to use
 num_tests=3            # number of tests to generate. max 5.
 avoid_mocks=true       # if true, the generated tests will prefer to use real objects instead of mocks
@@ -179,7 +179,7 @@ enable_help_text=false
 
 [pr_improve_component] # /improve_component #
 num_code_suggestions=4
-extra_instructions = ""
+extra_instructions = "Please use Japanese in descriptions."
 file = ""              # in case there are several components with the same name, you can specify the relevant file
 class_name = ""        # in case there are several methods with the same name in the same file, you can specify the relevant class name
 
@@ -198,7 +198,7 @@ num_retrieved_snippets=5
 
 [github]
 # The type of deployment to create. Valid values are 'app' or 'user'.
-deployment_type = "user"
+deployment_type = "app"
 ratelimit_retries = 5
 base_url = "https://api.github.com"
 publish_inline_comments_fallback_with_verification = true
@@ -320,6 +320,6 @@ enable_global_best_practices = false
 [auto_best_practices]
 enable_auto_best_practices = true # public - general flag to disable all auto best practices usage
 utilize_auto_best_practices = true # public - disable usage of auto best practices in the 'improve' tool
-extra_instructions = "" # public - extra instructions to the auto best practices generation prompt
+extra_instructions = "Please use Japanese in descriptions." # public - extra instructions to the auto best practices generation prompt
 content = ""
 max_patterns = 5 # max number of patterns to be detected
